@@ -8,7 +8,7 @@ export class MyLambdaStack extends cdk.Stack {
         super(scope, id, props);
 
         new Function (this, "MyLambdaFunction", {
-            runtime: Runtime.PYTHON_3_10,
+            runtime: Runtime.PYTHON_3_8,
             handler: "handler.handler",
             code: Code.fromAsset(path.join(__dirname, "lambda")),
             environment: {
