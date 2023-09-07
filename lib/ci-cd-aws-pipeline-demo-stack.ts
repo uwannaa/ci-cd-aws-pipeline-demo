@@ -20,7 +20,7 @@ export class CiCdAwsPipelineDemoStack extends cdk.Stack {
           "uwannaa/ci-cd-aws-pipeline-demo",
           "main",
         ),
-        commands: ["npm ci", "npm run build", "cdk synth"],
+        commands: ["npm ci", "npm run build", "npx cdk synth"],
       }),
     });
 
